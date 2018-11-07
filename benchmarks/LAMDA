@@ -1,0 +1,28 @@
+VAR
+
+CI = 0 2;
+C2 = 0 1;
+CRO = 0 1;
+N = 0 1;
+
+REG
+
+CI [CI>=1] => CI;
+CI [CI<2] => C2;
+CI [CI<2] => CRO;
+CI [CI<1] => N;
+
+C2[C2>= 1] => CI;
+
+CRO [CRO<3] =>CRO;
+CRO [CRO<1] => CI;
+CRO [CRO<2] => N;
+CRO [CRO<3] => C2;
+
+N [N>=1] => C2;
+
+
+CTL
+
+((CI = 2) &(CRO = 0) & (C2 = 0) & (N = 0)) -> AF(AG(((CI = 2) &(CRO = 1) & (N = 1))))
+

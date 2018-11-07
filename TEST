@@ -1,0 +1,21 @@
+VAR
+
+BTK = 0 1 ;
+MAL = 0 1 ;
+SOCS = 0 1 ;
+NFKB = 0 1 ;
+INCY = 0 2 ;
+
+REG
+
+BTK [BTK >= 1 ] => MAL ;
+MAL [MAL >= 1 ] => NFKB ;
+SOCS [SOCS < 1 ] => MAL ;
+SOCS [SOCS < 2 ] => NFKB ;
+NFKB [NFKB >= 1 ] => INCY ;
+INCY [INCY >= 2 ] => NFKB ;
+INCY [INCY >= 1 ] => SOCS ;
+
+CTL
+
+((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=1&SOCS=1&INCY=2)))&((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=0&SOCS=0&INCY=0)))

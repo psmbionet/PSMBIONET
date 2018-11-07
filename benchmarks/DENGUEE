@@ -1,0 +1,22 @@
+VAR
+TLR3 = 0 1 ;
+DENV = 0 1 ;
+SOCS = 0 1 ;
+IFN = 0 1 ;
+
+REG
+
+TLR3[(TLR3>=1)]=> IFN ;
+DENV [(DENV<1)] => IFN;
+DENV [(DENV>=1)] => TLR3;
+DENV [(DENV>=1)] => SOCS;
+SOCS [(SOCS<1)] => TLR3;
+SOCS [(SOCS<1)] => IFN;
+IFN [(IFN>=1)] => SOCS;
+
+CTL
+
+(((TLR3=0 & IFN =0 & SOCS=0 & DENV=0) -> EF(EG(SOCS=1 & DENV=1)))&
+
+((TLR3=0 & IFN =0 & SOCS=0 & DENV=0) -> EX(EF(TLR3=0 & IFN=0 & SOCS=0 & DENV=0))))
+

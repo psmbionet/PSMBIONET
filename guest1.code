@@ -1,0 +1,70 @@
+
+
+VAR
+
+CI = 0 2;
+C2 = 0 1;
+CRO = 0 1;
+N = 0 1;
+
+REG
+
+CI [CI>=1] => CI;
+CI [CI<2] => C2;
+CI [CI<2] => CRO;
+CI [CI<1] => N;
+
+C2[C2>= 1] => CI;
+
+CRO [CRO<3] =>CRO;
+CRO [CRO<1] => CI;
+CRO [CRO<2] => N;
+CRO [CRO<3] => C2;
+
+N [N>=1] => C2;
+
+CTL
+
+((CI = 2) &(CRO = 0) & (C2 = 0) & (N = 0)) -> AG(((C2 = 2) &(CRO = 0) & (C2 = 0) & (N = 0)))
+VAR
+
+BTK = 0 1 ;
+MAL = 0 1 ;
+SOCS = 0 1 ;
+NFKB = 0 1 ;
+INCY = 0 2 ;
+
+REG
+
+BTK [BTK >= 1 ] => MAL ;
+MAL [MAL >= 1 ] => NFKB ;
+SOCS [SOCS < 1 ] => MAL ;
+SOCS [SOCS < 2 ] => NFKB ;
+NFKB [NFKB >= 1 ] => INCY ;
+INCY [INCY >= 2 ] => NFKB ;
+INCY [INCY >= 1 ] => SOCS ;
+
+CTL
+
+((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=1&SOCS=1&INCY=2)))&((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=0&SOCS=0&INCY=0)))
+
+
+VAR
+BTK = 0 1 ;
+MAL = 0 1 ;
+SOCS = 0 1 ;
+NFKB = 0 1 ;
+INCY = 0 2 ;
+
+REG
+
+BTK [BTK >= 1 ] => MAL ;
+MAL [MAL >= 1 ] => NFKB ;
+SOCS [SOCS < 1 ] => MAL ;
+SOCS [SOCS < 2 ] => NFKB ;
+NFKB [NFKB >= 1 ] => INCY ;
+INCY [INCY >= 2 ] => NFKB ;
+INCY [INCY >= 1 ] => SOCS ;
+
+CTL
+((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=1&SOCS=1&INCY=2)))&((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=0&SOCS=0&INCY=0)))

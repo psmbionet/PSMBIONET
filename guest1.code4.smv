@@ -1,0 +1,116 @@
+-- NuSMV file written by SMBioNet
+
+MODULE main
+
+VAR
+
+CI : 0 .. 2 ;
+C2 : 0 .. 1 ;
+CRO : 0 .. 1 ;
+N : 0 .. 1 ;
+
+DEFINE
+
+F_CI :=
+case
+(C2>=1) & (CI>=1) & (CRO<1) : 1 ; -- K_CI+C2+CI+CRO
+(C2>=1) & (CRO<1) : 0 ; -- K_CI+C2+CRO
+(CI>=1) & (CRO<1) : 1 ; -- K_CI+CI+CRO
+(C2>=1) & (CI>=1) : 1 ; -- K_CI+C2+CI
+(CRO<1) : 0 ; -- K_CI+CRO
+(CI>=1) : 0 ; -- K_CI+CI
+(C2>=1) : 0 ; -- K_CI+C2
+1 : 0 ; -- K_CI
+esac;
+
+F_C2 :=
+case
+(CI<2) & (CRO<3) & (N>=1) : 0 ; -- K_C2+CI+CRO+N
+(CRO<3) & (N>=1) : 0 ; -- K_C2+CRO+N
+(CI<2) & (CRO<3) : 0 ; -- K_C2+CI+CRO
+(CRO<3) : 0 ; -- K_C2+CRO
+esac;
+
+F_CRO :=
+case
+(CI<2) & (CRO<3) : 0 ; -- K_CRO+CI+CRO
+(CRO<3) : 0 ; -- K_CRO+CRO
+esac;
+
+F_N :=
+case
+(CI<1) & (CRO<2) : 0 ; -- K_N+CI+CRO
+(CRO<2) : 0 ; -- K_N+CRO
+esac;
+
+ASSIGN
+
+next(CI) :=
+case
+CI = F_CI : CI ;
+CI < F_CI : {CI, CI + 1} ;
+CI > F_CI : {CI - 1, CI} ;
+esac;
+
+next(C2) :=
+case
+C2 =  F_C2 : C2 ;
+ 1 : {0, 1} ;
+esac;
+
+next(CRO) :=
+case
+CRO =  F_CRO : CRO ;
+ 1 : {0, 1} ;
+esac;
+
+next(N) :=
+case
+N =  F_N : N ;
+ 1 : {0, 1} ;
+esac;
+
+TRANS
+
+(CI = F_CI & C2 = F_C2 & CRO = F_CRO & N = F_N) |
+(CI != next(CI) & C2  = next(C2) & CRO  = next(CRO) & N  = next(N)) |
+(CI  = next(CI) & C2 != next(C2) & CRO  = next(CRO) & N  = next(N)) |
+(CI  = next(CI) & C2  = next(C2) & CRO != next(CRO) & N  = next(N)) |
+(CI  = next(CI) & C2  = next(C2) & CRO  = next(CRO) & N != next(N))
+
+SPEC
+
+((CI=2)&(CRO=0)&(C2=0)&(N=0))->AG(((C2=2)&(CRO=0)&(C2=0)&(N=0)))
+VAR
+BTK=01;
+MAL=01;
+SOCS=01;
+NFKB=01;
+INCY=02;
+REG
+BTK[BTK>=1]=>MAL;
+MAL[MAL>=1]=>NFKB;
+SOCS[SOCS<1]=>MAL;
+SOCS[SOCS<2]=>NFKB;
+NFKB[NFKB>=1]=>INCY;
+INCY[INCY>=2]=>NFKB;
+INCY[INCY>=1]=>SOCS;
+CTL
+((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=1&SOCS=1&INCY=2)))&((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=0&SOCS=0&INCY=0)))
+VAR
+BTK=01;
+MAL=01;
+SOCS=01;
+NFKB=01;
+INCY=02;
+REG
+BTK[BTK>=1]=>MAL;
+MAL[MAL>=1]=>NFKB;
+SOCS[SOCS<1]=>MAL;
+SOCS[SOCS<2]=>NFKB;
+NFKB[NFKB>=1]=>INCY;
+INCY[INCY>=2]=>NFKB;
+INCY[INCY>=1]=>SOCS;
+CTL
+((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=1&SOCS=1&INCY=2)))&((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=0&SOCS=0&INCY=0)))
+

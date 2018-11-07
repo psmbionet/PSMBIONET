@@ -1,0 +1,67 @@
+VAR
+
+C1 = 0 2 ;
+C2 = 0 1 ;
+N = 0 1 ;
+CRO = 0 3 ;
+
+REG
+
+CRO [(CRO<1)]=> C1 ;
+C1 [(C1>=2)]=> C1 ;
+C2 [(C2>=1)]=> C1 ;
+C1 [(C1<2)]=> C2 ;
+CRO [(CRO<3)]=> C2 ;
+N [(N>=1)]=> C2 ;
+C1 [(C1<1)]=> N ;
+CRO [(CRO<2)]=> N ;
+C1 [(C1<2)]=> CRO ;
+CRO [(CRO<3)]=> CRO ;
+
+PARA
+
+# Parameters for C1
+
+K_C1 = 0 2 ;
+K_C1+C1 = 0 2 ;
+K_C1+C2 = 0 2 ;
+K_C1+CRO = 0 2 ;
+K_C1+C1+C2 = 0 2 ;
+K_C1+C2+CRO = 0 2 ;
+K_C1+C1+CRO = 0 2 ;
+K_C1+C1+C2+CRO = 0 2 ;
+
+# Parameters for C2
+
+K_C2 = 0 1 ;
+K_C2+C1 = 0 1 ;
+K_C2+CRO = 0 1 ;
+K_C2+N = 0 1 ;
+K_C2+C1+CRO = 0 1 ;
+K_C2+CRO+N = 0 1 ;
+K_C2+C1+N = 0 1 ;
+K_C2+C1+CRO+N = 0 1 ;
+
+# Parameters for N
+
+K_N = 0 1 ;
+K_N+C1 = 0 1 ;
+K_N+CRO = 0 1 ;
+K_N+C1+CRO = 0 1 ;
+
+# Parameters for CRO
+
+K_CRO = 0 3 ;
+K_CRO+C1 = 0 3 ;
+K_CRO+CRO = 0 3 ;
+K_CRO+C1+CRO = 0 3 ;
+
+CTL
+
+((C1=0&CRO>=2&C2=0&N=0)->AG((C1=0&CRO>=2&C2=0&N=0)))
+&
+((C1=2&CRO=0&C2=0&N=0)->AG((C1=2&CRO=0&C2=0&N=0)))
+&
+((C1=0&CRO=0&C2=0&N=0)->AF((C1=0&CRO>=2&C2=0&N=0)))
+& 
+AF((C1=2&CRO=0&C2=0&N=0))

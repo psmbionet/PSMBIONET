@@ -1,0 +1,30 @@
+VAR
+
+x = 0 2 ;
+y = 0 1 ;
+
+REG
+
+x [(x>1)]=> x ;
+y [(y<1)]=> x ;
+x [(x>=1)]=> y ;
+
+PARA
+
+# Parameters for x
+
+K_x = 0 2 ;
+K_x+x = 0 2 ;
+K_x+y = 0 2 ;
+K_x+x+y = 0 2 ;
+
+# Parameters for y
+
+K_y = 0 1 ;
+K_y+x = 0 1 ;
+
+CTL
+
+((x=2)->AX(AF(x=2)))&
+((x=0)->AG!(x=2))
+

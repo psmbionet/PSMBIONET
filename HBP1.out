@@ -1,0 +1,1430 @@
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+HBP10.smv
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 0
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+HBP11.smv
+HBP11.smv
+HBP11.smv
+HBP11.smv
+HBP11.smv
+HBP11.smv
+HBP11.smv
+HBP11.smv
+HBP11.smv
+HBP11.smv
+HBP11.smv
+HBP11.smv
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 0
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 0
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 0
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 0
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_NFKB = 0
+-- K_NFKB+P21 = 0
+-- K_NFKB+PI3K = 0
+-- K_NFKB+P21+PI3K = 1
+--END
+-- K_PI3K = 0
+-- K_PI3K+NFKB = 1
+-- K_PI3K+OGT = 1
+-- K_PI3K+P53 = 0
+-- K_PI3K+NFKB+OGT = 1
+-- K_PI3K+OGT+P53 = 1
+-- K_PI3K+NFKB+P53 = 1
+-- K_PI3K+NFKB+OGT+P53 = 1
+--END
+-- K_OGA = 0
+-- K_OGA+OGT = 1
+--END
+-- K_P53 = 0
+-- K_P53+MDM2 = 1
+-- K_P53+NFKB = 1
+-- K_P53+MDM2+NFKB = 1
+--END
+-- K_P21 = 0
+-- K_P21+FOXM = 0
+-- K_P21+P53 = 1
+-- K_P21+PI3K = 0
+-- K_P21+FOXM+P53 = 1
+-- K_P21+P53+PI3K = 1
+-- K_P21+FOXM+PI3K = 1
+-- K_P21+FOXM+P53+PI3K = 1
+--END
+-- K_FOXM = 0
+-- K_FOXM+P53 = 0
+-- K_FOXM+PI3K = 1
+-- K_FOXM+P53+PI3K = 1
+--END
+-- K_OGT = 0
+-- K_OGT+CMyc = 0
+-- K_OGT+OGA = 0
+-- K_OGT+CMyc+OGA = 0
+--END
+-- K_MDM2 = 0
+-- K_MDM2+P53 = 1
+--END
+-- K_CMyc = 0
+-- K_CMyc+OGT = 1
+-- K_CMyc+P53 = 0
+-- K_CMyc+OGT+P53 = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+

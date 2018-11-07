@@ -1,0 +1,30 @@
+
+VAR
+
+a = 0 2 ;
+b = 0 1 ;
+
+REG
+
+acti [(a>1)]=> a b ;
+inhi [(b<1)]=> a ;
+
+PARA
+
+# Parameters for a
+
+K_a = 0 2 ;
+K_a+acti = 0 2 ;
+K_a+inhi = 1 2 ;
+K_a+acti+inhi = 1 2 ;
+
+# Parameters for b
+
+K_b = 0 ;
+K_b+acti = 0 1 ;
+
+CTL
+
+(b=0)->EF(a=2)
+
+# NUMBER OF : SELECTED MODELS / CHECKED MODELS = 0 / 20 (246ms)

@@ -1,0 +1,84 @@
+-- NuSMV file written by SMBioNet
+
+MODULE main
+
+VAR
+
+a : 0 .. 2 ;
+c : 0 .. 1 ;
+r : 0 .. 2 ;
+b : 0 .. 1 ;
+
+DEFINE
+
+F_a :=
+case
+(a>=1) : 2 ; -- K_a+a
+1 : 0 ; -- K_a
+esac;
+
+F_c :=
+case
+(a>=2) & (r>=1) : 1 ; -- K_c+a+r
+(r>=1) : 1 ; -- K_c+r
+(a>=2) : 1 ; -- K_c+a
+1 : 1 ; -- K_c
+esac;
+
+F_r :=
+case
+(a>=1) & (c<1) & (r>=2) : 2 ; -- K_r+a+c+r
+(a>=1) & (r>=2) : 0 ; -- K_r+a+r
+(c<1) & (r>=2) : 2 ; -- K_r+c+r
+(a>=1) & (c<1) : 2 ; -- K_r+a+c
+(r>=2) : 0 ; -- K_r+r
+(c<1) : 2 ; -- K_r+c
+(a>=1) : 0 ; -- K_r+a
+1 : 0 ; -- K_r
+esac;
+
+F_b :=
+case
+(r<1) : 1 ; -- K_b+r
+1 : 0 ; -- K_b
+esac;
+
+ASSIGN
+
+next(a) :=
+case
+a = F_a : a ;
+a < F_a : {a, a + 1} ;
+a > F_a : {a - 1, a} ;
+esac;
+
+next(c) :=
+case
+c =  F_c : c ;
+ 1 : {0, 1} ;
+esac;
+
+next(r) :=
+case
+r = F_r : r ;
+r < F_r : {r, r + 1} ;
+r > F_r : {r - 1, r} ;
+esac;
+
+next(b) :=
+case
+b =  F_b : b ;
+ 1 : {0, 1} ;
+esac;
+
+TRANS
+
+(a = F_a & c = F_c & r = F_r & b = F_b) |
+(a != next(a) & c  = next(c) & r  = next(r) & b  = next(b)) |
+(a  = next(a) & c != next(c) & r  = next(r) & b  = next(b)) |
+(a  = next(a) & c  = next(c) & r != next(r) & b  = next(b)) |
+(a  = next(a) & c  = next(c) & r  = next(r) & b != next(b))
+
+SPEC
+TRUE
+

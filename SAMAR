@@ -1,0 +1,49 @@
+VAR
+
+GLUT1=0 1;
+GLUT4=0 1;
+Pyruvate=0 1;
+PFK1=0 1;
+PDK=0 1;
+AcetylCoA=0 1;
+FattyAcids=0 1;
+CD36=0 1;
+FAS=0 1;
+Citrate=0 1;
+ATP_NADH=0 1;
+CiC=0 1;
+MalonylCoA=0 1;
+AMPK=0 1;
+PPARg=0 1;
+TZD=0 1;
+
+REG
+
+GLUT1 [GLUT1>=1]=> Pyruvate;
+GLUT4 [GLUT4>=1]=> Pyruvate;
+Pyruvate [Pyruvate>=1]=> AcetylCoA;
+Pyruvate [Pyruvate<1]=> PDK;
+PDK [PDK<1]=> AcetylCoA;
+PFK1 [PFK1>=1]=> Pyruvate;
+AcetylCoA [AcetylCoA>=1]=> FattyAcids;
+FattyAcids [FattyAcids>=1]=> AcetylCoA;
+FAS [FAS>=1]=> FattyAcids;
+CD36 [CD36>=1]=> FattyAcids;
+FattyAcids [FattyAcids>=1]=> PPARg;
+AcetylCoA [AcetylCoA>=1]=> Citrate;
+Citrate [Citrate>=1]=> ATP_NADH;
+Citrate [Citrate>=1]=> MalonylCoA;
+Citrate [Citrate<1]=> PFK1;
+CiC [CiC>=1]=> MalonylCoA;
+CiC [CiC<1]=> PFK1;
+ATP_NADH [ATP_NADH>=1]=> PDK;
+ATP_NADH [ATP_NADH<1]=> AMPK;
+AMPK [AMPK<1]=> MalonylCoA;
+MalonylCoA [MalonylCoA<1]=> AcetylCoA;
+TZD [TZD>=1]=> PPARg;
+TZD [TZD>=1]=> AMPK;
+PPARg [PPARg>=1]=> PDK;
+
+CTL
+
+(1) -> (1);

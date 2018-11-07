@@ -1,0 +1,90 @@
+-- NuSMV file written by SMBioNet
+
+MODULE main
+
+VAR
+
+BTK : 0 .. 1 ;
+MAL : 0 .. 1 ;
+SOCS : 0 .. 1 ;
+NFKB : 0 .. 1 ;
+INCY : 0 .. 2 ;
+
+DEFINE
+
+F_BTK := 1 ; -- K_BTK
+
+F_MAL :=
+case
+(BTK>=1) & (SOCS<1) : 1 ; -- K_MAL+BTK+SOCS
+(SOCS<1) : 1 ; -- K_MAL+SOCS
+(BTK>=1) : 1 ; -- K_MAL+BTK
+1 : 1 ; -- K_MAL
+esac;
+
+F_SOCS :=
+case
+(INCY>=1) : 1 ; -- K_SOCS+INCY
+1 : 1 ; -- K_SOCS
+esac;
+
+F_NFKB :=
+case
+(INCY>=2) & (MAL>=1) & (SOCS<2) : 1 ; -- K_NFKB+INCY+MAL+SOCS
+(INCY>=2) & (SOCS<2) : 1 ; -- K_NFKB+INCY+SOCS
+(MAL>=1) & (SOCS<2) : 1 ; -- K_NFKB+MAL+SOCS
+(SOCS<2) : 1 ; -- K_NFKB+SOCS
+esac;
+
+F_INCY :=
+case
+(NFKB>=1) : 2 ; -- K_INCY+NFKB
+1 : 2 ; -- K_INCY
+esac;
+
+ASSIGN
+
+next(BTK) :=
+case
+BTK =  F_BTK : BTK ;
+ 1 : {0, 1} ;
+esac;
+
+next(MAL) :=
+case
+MAL =  F_MAL : MAL ;
+ 1 : {0, 1} ;
+esac;
+
+next(SOCS) :=
+case
+SOCS =  F_SOCS : SOCS ;
+ 1 : {0, 1} ;
+esac;
+
+next(NFKB) :=
+case
+NFKB =  F_NFKB : NFKB ;
+ 1 : {0, 1} ;
+esac;
+
+next(INCY) :=
+case
+INCY = F_INCY : INCY ;
+INCY < F_INCY : {INCY, INCY + 1} ;
+INCY > F_INCY : {INCY - 1, INCY} ;
+esac;
+
+TRANS
+
+(BTK = F_BTK & MAL = F_MAL & SOCS = F_SOCS & NFKB = F_NFKB & INCY = F_INCY) |
+(BTK != next(BTK) & MAL  = next(MAL) & SOCS  = next(SOCS) & NFKB  = next(NFKB) & INCY  = next(INCY)) |
+(BTK  = next(BTK) & MAL != next(MAL) & SOCS  = next(SOCS) & NFKB  = next(NFKB) & INCY  = next(INCY)) |
+(BTK  = next(BTK) & MAL  = next(MAL) & SOCS != next(SOCS) & NFKB  = next(NFKB) & INCY  = next(INCY)) |
+(BTK  = next(BTK) & MAL  = next(MAL) & SOCS  = next(SOCS) & NFKB != next(NFKB) & INCY  = next(INCY)) |
+(BTK  = next(BTK) & MAL  = next(MAL) & SOCS  = next(SOCS) & NFKB  = next(NFKB) & INCY != next(INCY))
+
+SPEC
+
+((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=1&SOCS=1&INCY=2)))&((BTK=1&MAL=0&NFKB=0&SOCS=0&INCY=0)->EF(AG(BTK=0&MAL=0&NFKB=0&SOCS=0&INCY=0)))
+

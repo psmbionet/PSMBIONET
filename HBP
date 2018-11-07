@@ -1,0 +1,109 @@
+VAR
+
+NFKB = 0 1 ;
+PI3K = 0 1 ;
+OGA = 0 1 ;
+P53 = 0 1 ;
+P21 = 0 1 ;
+FOXM = 0 1 ;
+OGT = 0 1 ;
+MDM2 = 0 1 ;
+CMyc = 0 1 ;
+
+REG
+
+PI3K [(PI3K>=1)]=> NFKB FOXM ;
+P21 [(P21<1)]=> NFKB ;
+OGT [(OGT>=1)]=> PI3K CMyc ;
+P53 [(P53<1)]=> PI3K FOXM CMyc ;
+NFKB [(NFKB>=1)]=> PI3K P53 ;
+OGT [(OGT<1)]=> OGA ;
+MDM2 [(MDM2<1)]=> P53 ;
+P53 [(P53>=1)]=> P21 MDM2 ;
+PI3K [(PI3K<1)]=> P21 ;
+FOXM [(FOXM<1)]=> P21 ;
+OGA [(OGA<1)]=> OGT ;
+CMyc [(CMyc>=1)]=> OGT ;
+
+PARA
+
+# Parameters for NFKB
+
+K_NFKB = 0  ;
+K_NFKB+P21 = 0  ;		# can be decided as zero (possibly)??
+K_NFKB+PI3K = 0  ;		# ??
+K_NFKB+P21+PI3K =  1 ;
+
+# Parameters for PI3K
+
+K_PI3K = 0  ;
+K_PI3K+NFKB = 0 1 ;  		#selected as 0
+K_PI3K+OGT =   1 ;		################## TEST 		
+K_PI3K+P53 = 0 1 ; 		#selected as 0
+K_PI3K+NFKB+OGT = 0 1 ;		#selected as 1
+K_PI3K+OGT+P53 =  1 ;		# inhibitor absent and atlease one activator is present
+K_PI3K+NFKB+P53 =  1 ;		# inhibitor absent and atlease one activator is present
+K_PI3K+NFKB+OGT+P53 =  1 ;	
+
+# Parameters for OGA
+
+K_OGA = 0 1 ;
+K_OGA+OGT = 0 1 ;
+
+# Parameters for P53
+
+K_P53 = 0 1 ;
+K_P53+MDM2 = 0 1 ;		#absence of inhibitor is treated as activation[citation: Conf paper IEEE]
+K_P53+NFKB = 0 1 ;		####undecideable case
+K_P53+MDM2+NFKB = 0 1 ;
+
+# Parameters for P21
+
+K_P21 = 0  ;
+K_P21+FOXM = 0 1 ;		#selected as 0
+K_P21+P53 = 0 1 ;
+K_P21+PI3K = 0 1 ;		#activator absent and atleast one inhibitor is present
+K_P21+FOXM+P53 = 0 1 ; 		
+K_P21+P53+PI3K = 0 1 ;
+K_P21+FOXM+PI3K = 0 1 ;		#selected as 1
+K_P21+FOXM+P53+PI3K =  1 ;
+
+# Parameters for FOXM
+
+K_FOXM = 0  ;
+K_FOXM+P53 = 0 1 ;		#selected as 0
+K_FOXM+PI3K = 0 1 ;		#selected as 1
+K_FOXM+P53+PI3K =  1 ;
+
+# Parameters for OGT
+
+K_OGT = 0;
+K_OGT+CMyc = 0 1 ;  #####tEST		#selected as 0
+K_OGT+OGA = 0 1 ;		### When OGA is high OGT is low [reference required]
+K_OGT+CMyc+OGA= 1;
+
+# Parameters for MDM2
+
+K_MDM2 = 0  ;
+K_MDM2+P53 =  1 ;
+
+# Parameters for CMyc
+
+K_CMyc =  0 ;
+K_CMyc+OGT = 0 1 ;		#selected as 1
+K_CMyc+P53 = 0 1 ;		
+K_CMyc+OGT+P53 =  1 ;
+
+
+
+CTL
+
+
+((OGT=1 & OGA=0 ) -> EF(AG(NFKB=1 & OGT=1 & OGA=0 & MDM2=1 & PI3K=1 &  FOXM=1 & P21=0 & CMyc=1 & P53=1)))
+&
+((OGT =0 & OGA=1 & P53=1 & P21=1) -> EX(EF(OGT =0 & OGA=1 & P53=1 & P21=1 )))
+&
+((OGT=0 & OGA=1 ) ->
+EF(AG(OGT =0 & OGA=1 & PI3K=0 &  FOXM=0 & P21=1 & CMyc=0)))
+
+

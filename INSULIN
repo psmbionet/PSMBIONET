@@ -1,0 +1,104 @@
+
+VAR
+
+Glu = 0 1 ;
+BMAL1 = 0 1 ;
+CLOCK = 0 1 ;
+CB = 0 1 ;
+PC = 0 1 ;
+REV = 0 1 ;
+Ins = 0 1 ;
+
+REG
+
+Ins [(Ins<1)]=> Glu ;
+CLOCK [(CLOCK>=1)]=> BMAL1 ;
+REV [(REV<1)]=> BMAL1 ;
+CLOCK [(CLOCK>=1)]=> CB ;
+BMAL1 [(BMAL1>=1)]=> CB ;
+PC [(PC<1)]=> CB ;
+CB [(CB>=1)]=> PC ;
+CB [(CB>=1)]=> REV ;
+Glu [(Glu>=1)]=> Ins ;
+CLOCK [(CLOCK>=1)]=> Ins ;
+BMAL1 [(BMAL1>=1)]=> Ins ;
+REV [(REV>=1)]=> Ins ;
+Ins [(Ins<1)]=> Ins ;
+
+PARA
+
+# Parameters for Glu
+
+K_Glu = 0  ;
+K_Glu+Ins =  1 ;
+
+# Parameters for BMAL1
+
+K_BMAL1 = 0 ;
+K_BMAL1+CLOCK = 0 1 ;
+K_BMAL1+REV = 0 1 ;
+K_BMAL1+CLOCK+REV =  1 ;
+
+# Parameters for CLOCK
+
+K_CLOCK = 1 ;
+
+# Parameters for CB
+
+K_CB = 0  ;
+K_CB+BMAL1 = 0 1 ;
+K_CB+CLOCK = 0 1 ;
+K_CB+PC = 0 1 ;
+K_CB+BMAL1+CLOCK = 0 1 ;
+K_CB+CLOCK+PC =  1 ;
+K_CB+BMAL1+PC =  1 ;
+K_CB+BMAL1+CLOCK+PC =  1 ;
+
+# Parameters for PC
+
+K_PC = 0  ;
+K_PC+CB =  1 ;
+
+# Parameters for REV
+
+K_REV = 0  ;
+K_REV+CB =  1 ;
+
+# Parameters for Ins
+
+K_Ins = 0  ;
+K_Ins+BMAL1 = 0 1 ;
+K_Ins+CLOCK = 0 1 ;
+K_Ins+Glu = 0 1 ;
+K_Ins+Ins = 0 1 ;
+K_Ins+REV = 0 1 ;
+K_Ins+BMAL1+CLOCK = 0 1 ;
+K_Ins+CLOCK+Glu = 0 1 ;
+K_Ins+CLOCK+Ins = 0 1 ;
+K_Ins+CLOCK+REV = 0 1 ;
+K_Ins+BMAL1+Glu = 0 1 ;
+K_Ins+Glu+Ins = 0 1 ;
+K_Ins+Glu+REV = 0 1 ;
+K_Ins+BMAL1+Ins =0  1 ;
+K_Ins+Ins+REV = 0 1 ;
+K_Ins+BMAL1+REV = 0 1 ;
+K_Ins+BMAL1+Glu+REV = 0 1 ;
+K_Ins+CLOCK+Ins+REV =0 1 ;
+K_Ins+BMAL1+CLOCK+Ins = 0 1 ;
+K_Ins+BMAL1+Ins+REV = 0 1 ;
+K_Ins+BMAL1+CLOCK+REV = 0 1 ;
+K_Ins+Glu+Ins+REV = 0 1 ;
+K_Ins+BMAL1+CLOCK+Glu = 0 1 ;
+K_Ins+BMAL1+Glu+Ins = 0 1 ;
+K_Ins+CLOCK+Glu+Ins = 0 1 ;
+K_Ins+CLOCK+Glu+REV = 0 1 ;
+K_Ins+BMAL1+CLOCK+Glu+REV = 0 1 ;
+K_Ins+BMAL1+CLOCK+Glu+Ins =0 1 ;
+K_Ins+BMAL1+CLOCK+Ins+REV = 0 1 ;
+K_Ins+CLOCK+Glu+Ins+REV =0 1 ;
+K_Ins+BMAL1+Glu+Ins+REV =  1 ;
+K_Ins+BMAL1+CLOCK+Glu+Ins+REV =  1 ;
+
+CTL
+EF(BMAL1=0&PC=0 &REV=0& Ins=0 & Glu=0)-> EX(EF((BMAL1=0&PC=0 &REV=0& Ins=0 & Glu=0)))
+#(BMAL1=0 & REV=1 & PC=1) -> EX(EF(BMAL1=0 & REV=1 & PC=1))& EF(AG(Ins=0))

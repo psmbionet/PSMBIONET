@@ -1,0 +1,51 @@
+
+VAR
+
+a = 0 2 ;
+c = 0 1 ;
+r = 0 2 ;
+b = 0 1 ;
+
+REG 
+
+a [a>=1] => a ;
+
+a [a>=2] => c ;
+r [r>=1] => c ;
+
+a [a>=1] => r ;
+c [c<1 ] => r ; 
+r [r>=2] => r ;
+
+r [r<1] => b ;
+
+PARA
+
+K_a = 0 ;
+K_a+a = 2 ;
+
+K_b = 0 ;
+K_b+r = 1 ;
+
+K_c = 0 1 ;   
+K_c+a = 1 ; 
+K_c+r = 0 1 ; 
+K_c+a+r = 1 ;
+
+K_r = 0 ; #fixé        
+K_r+a = 0 ; #fixé
+K_r+c = 0 2 ; #non contrain
+K_r+r = 0 1 ; #fixé
+K_r+a+c = 1 2 ; #contraint   
+K_r+c+r = 0 2 ; #non contraint  
+K_r+a+r = 0 1 ; #fixé   
+K_r+a+c+r = 0 2 ; #non contraint 
+
+
+CTL
+
+
+
+
+
+

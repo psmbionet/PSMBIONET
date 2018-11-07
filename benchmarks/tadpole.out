@@ -1,0 +1,4096 @@
+benchmarks/tadpole0.smv
+benchmarks/tadpole0.smv
+benchmarks/tadpole0.smv
+benchmarks/tadpole0.smv
+benchmarks/tadpole0.smv
+benchmarks/tadpole0.smv
+benchmarks/tadpole0.smv
+benchmarks/tadpole0.smv
+benchmarks/tadpole0.smv
+benchmarks/tadpole0.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole1.smv
+benchmarks/tadpole1.smv
+benchmarks/tadpole1.smv
+benchmarks/tadpole1.smv
+benchmarks/tadpole1.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole2.smv
+benchmarks/tadpole2.smv
+benchmarks/tadpole2.smv
+benchmarks/tadpole2.smv
+benchmarks/tadpole2.smv
+benchmarks/tadpole2.smv
+benchmarks/tadpole2.smv
+benchmarks/tadpole2.smv
+benchmarks/tadpole2.smv
+benchmarks/tadpole2.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole3.smv
+benchmarks/tadpole3.smv
+benchmarks/tadpole3.smv
+benchmarks/tadpole3.smv
+benchmarks/tadpole3.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole4.smv
+benchmarks/tadpole4.smv
+benchmarks/tadpole4.smv
+benchmarks/tadpole4.smv
+benchmarks/tadpole4.smv
+benchmarks/tadpole4.smv
+benchmarks/tadpole4.smv
+benchmarks/tadpole4.smv
+benchmarks/tadpole4.smv
+benchmarks/tadpole4.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole5.smv
+benchmarks/tadpole5.smv
+benchmarks/tadpole5.smv
+benchmarks/tadpole5.smv
+benchmarks/tadpole5.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole6.smv
+benchmarks/tadpole6.smv
+benchmarks/tadpole6.smv
+benchmarks/tadpole6.smv
+benchmarks/tadpole6.smv
+benchmarks/tadpole6.smv
+benchmarks/tadpole6.smv
+benchmarks/tadpole6.smv
+benchmarks/tadpole6.smv
+benchmarks/tadpole6.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole7.smv
+benchmarks/tadpole7.smv
+benchmarks/tadpole7.smv
+benchmarks/tadpole7.smv
+benchmarks/tadpole7.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole8.smv
+benchmarks/tadpole8.smv
+benchmarks/tadpole8.smv
+benchmarks/tadpole8.smv
+benchmarks/tadpole8.smv
+benchmarks/tadpole8.smv
+benchmarks/tadpole8.smv
+benchmarks/tadpole8.smv
+benchmarks/tadpole8.smv
+benchmarks/tadpole8.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole9.smv
+benchmarks/tadpole9.smv
+benchmarks/tadpole9.smv
+benchmarks/tadpole9.smv
+benchmarks/tadpole9.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole10.smv
+benchmarks/tadpole10.smv
+benchmarks/tadpole10.smv
+benchmarks/tadpole10.smv
+benchmarks/tadpole10.smv
+benchmarks/tadpole10.smv
+benchmarks/tadpole10.smv
+benchmarks/tadpole10.smv
+benchmarks/tadpole10.smv
+benchmarks/tadpole10.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole11.smv
+benchmarks/tadpole11.smv
+benchmarks/tadpole11.smv
+benchmarks/tadpole11.smv
+benchmarks/tadpole11.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole12.smv
+benchmarks/tadpole12.smv
+benchmarks/tadpole12.smv
+benchmarks/tadpole12.smv
+benchmarks/tadpole12.smv
+benchmarks/tadpole12.smv
+benchmarks/tadpole12.smv
+benchmarks/tadpole12.smv
+benchmarks/tadpole12.smv
+benchmarks/tadpole12.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 0
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 2
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole13.smv
+benchmarks/tadpole13.smv
+benchmarks/tadpole13.smv
+benchmarks/tadpole13.smv
+benchmarks/tadpole13.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole14.smv
+benchmarks/tadpole14.smv
+benchmarks/tadpole14.smv
+benchmarks/tadpole14.smv
+benchmarks/tadpole14.smv
+benchmarks/tadpole14.smv
+benchmarks/tadpole14.smv
+benchmarks/tadpole14.smv
+benchmarks/tadpole14.smv
+benchmarks/tadpole14.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 0
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 2
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 0
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+benchmarks/tadpole15.smv
+benchmarks/tadpole15.smv
+benchmarks/tadpole15.smv
+benchmarks/tadpole15.smv
+benchmarks/tadpole15.smv
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 0
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 0
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 1
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 0
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_T3 = 0
+-- K_T3+catalyse1 = 1
+-- K_T3+catalyse3 = 3
+-- K_T3+catalyse1+catalyse3 = 3
+--END
+-- K_T4 = 1
+-- K_T4+catalyse2 = 1
+--END
+-- K_d2 = 0
+-- K_d2+acti = 1
+-- K_d2+inhi = 0
+-- K_d2+acti+inhi = 1
+--END
+-- K_d3 = 0
+-- K_d3+acti = 0
+-- K_d3+inhi = 1
+-- K_d3+acti+inhi = 1
+--END
+-- K_gi = 1
+-- K_gi+acti = 1
+--END
+-- K_gp = 1
+-- K_gp+acti = 1
+--END
+-- K_gt = 0
+-- K_gt+factransc = 1
+--END
+-- K_trb = 1
+-- K_trb+acti = 1
+-- K_trb+inhi = 1
+-- K_trb+acti+inhi = 1
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+

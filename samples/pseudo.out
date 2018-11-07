@@ -1,0 +1,280 @@
+
+VAR
+
+a = 0 2 ;
+b = 0 1 ;
+
+REG
+
+a [(a>1)]=> a ;
+b [(b<1)]=> a ;
+a [(a>2)]=> b ;
+
+PARA
+
+# Parameters for a
+
+K_a = 0 2 ;
+K_a+a = 0 2 ;
+K_a+b = 0 2 ;
+K_a+a+b = 0 2 ;
+
+# Parameters for b
+
+K_b = 0 1 ;
+
+# NO CTL FORMULA
+
+# MODEL 1
+
+# K_a = 0
+# K_a+a = 0 1
+# K_a+b = 0
+# K_a+a+b = 0 1
+
+# K_b = 0
+
+# MODEL 2
+
+# K_a = 0
+# K_a+a = 0 1
+# K_a+b = 1
+# K_a+a+b = 0 1
+
+# K_b = 0
+
+# MODEL 3
+
+# K_a = 1
+# K_a+a = 0 1
+# K_a+b = 1
+# K_a+a+b = 0 1
+
+# K_b = 0
+
+# MODEL 4
+
+# K_a = 0
+# K_a+a = 0 1
+# K_a+b = 0
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 5
+
+# K_a = 0
+# K_a+a = 2
+# K_a+b = 0
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 6
+
+# K_a = 0
+# K_a+a = 0 1
+# K_a+b = 1
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 7
+
+# K_a = 1
+# K_a+a = 0 1
+# K_a+b = 1
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 8
+
+# K_a = 0
+# K_a+a = 2
+# K_a+b = 1
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 9
+
+# K_a = 1
+# K_a+a = 2
+# K_a+b = 1
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 10
+
+# K_a = 0
+# K_a+a = 0 1
+# K_a+b = 2
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 11
+
+# K_a = 1
+# K_a+a = 0 1
+# K_a+b = 2
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 12
+
+# K_a = 0
+# K_a+a = 2
+# K_a+b = 2
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 13
+
+# K_a = 1
+# K_a+a = 2
+# K_a+b = 2
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 14
+
+# K_a = 2
+# K_a+a = 2
+# K_a+b = 2
+# K_a+a+b = 2
+
+# K_b = 0
+
+# MODEL 15
+
+# K_a = 0
+# K_a+a = 0 1
+# K_a+b = 0
+# K_a+a+b = 0 1
+
+# K_b = 1
+
+# MODEL 16
+
+# K_a = 0
+# K_a+a = 0 1
+# K_a+b = 1
+# K_a+a+b = 0 1
+
+# K_b = 1
+
+# MODEL 17
+
+# K_a = 1
+# K_a+a = 0 1
+# K_a+b = 1
+# K_a+a+b = 0 1
+
+# K_b = 1
+
+# MODEL 18
+
+# K_a = 0
+# K_a+a = 0 1
+# K_a+b = 0
+# K_a+a+b = 2
+
+# K_b = 1
+
+# MODEL 19
+
+# K_a = 0
+# K_a+a = 2
+# K_a+b = 0
+# K_a+a+b = 2
+
+# K_b = 1
+
+# MODEL 20
+
+# K_a = 0
+# K_a+a = 0 1
+# K_a+b = 1
+# K_a+a+b = 2
+
+# K_b = 1
+
+# MODEL 21
+
+# K_a = 1
+# K_a+a = 0 1
+# K_a+b = 1
+# K_a+a+b = 2
+
+# K_b = 1
+
+# MODEL 22
+
+# K_a = 0
+# K_a+a = 2
+# K_a+b = 1
+# K_a+a+b = 2
+
+# K_b = 1
+
+# MODEL 23
+
+# K_a = 1
+# K_a+a = 2
+# K_a+b = 1
+# K_a+a+b = 2
+
+# K_b = 1
+
+# MODEL 24
+
+# K_a = 0
+# K_a+a = 0 1
+# K_a+b = 2
+# K_a+a+b = 2
+
+# K_b = 1
+
+# MODEL 25
+
+# K_a = 1
+# K_a+a = 0 1
+# K_a+b = 2
+# K_a+a+b = 2
+
+# K_b = 1
+
+# MODEL 26
+
+# K_a = 0
+# K_a+a = 2
+# K_a+b = 2
+# K_a+a+b = 2
+
+# K_b = 1
+
+# MODEL 27
+
+# K_a = 1
+# K_a+a = 2
+# K_a+b = 2
+# K_a+a+b = 2
+
+# K_b = 1
+
+# MODEL 28
+
+# K_a = 2
+# K_a+a = 2
+# K_a+b = 2
+# K_a+a+b = 2
+
+# K_b = 1
+
+# SELECTED MODELS / CHECKED MODELS = 28 / 28 (588ms)

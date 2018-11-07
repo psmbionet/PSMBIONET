@@ -1,0 +1,130 @@
+-- NuSMV file written by SMBioNet
+
+MODULE main
+
+VAR
+
+a : 0 .. 2 ;
+c : 0 .. 1 ;
+r : 0 .. 2 ;
+b : 0 .. 1 ;
+ko : 0 .. 1 ;
+trans : 0 .. 1 ;
+
+DEFINE
+
+F_a :=
+case
+(a>=1) : 2 ; -- K_a+a
+1 : 0 ; -- K_a
+esac;
+
+F_c :=
+case
+(a>=2) & (ko=0) & (r>=1) & (trans=1) : 1 ; -- K_c+a+ko+r+trans
+(ko=0) & (r>=1) & (trans=1) : 1 ; -- K_c+ko+r+trans
+(a>=2) & (r>=1) & (trans=1) : 0 ; -- K_c+a+r+trans
+(a>=2) & (ko=0) & (r>=1) : 1 ; -- K_c+a+ko+r
+(a>=2) & (ko=0) & (trans=1) : 1 ; -- K_c+a+ko+trans
+(a>=2) & (trans=1) : 0 ; -- K_c+a+trans
+(r>=1) & (trans=1) : 0 ; -- K_c+r+trans
+(a>=2) & (r>=1) : 0 ; -- K_c+a+r
+(ko=0) & (trans=1) : 1 ; -- K_c+ko+trans
+(ko=0) & (r>=1) : 0 ; -- K_c+ko+r
+(a>=2) & (ko=0) : 1 ; -- K_c+a+ko
+(trans=1) : 0 ; -- K_c+trans
+(r>=1) : 0 ; -- K_c+r
+(ko=0) : 0 ; -- K_c+ko
+(a>=2) : 0 ; -- K_c+a
+1 : 0 ; -- K_c
+esac;
+
+F_r :=
+case
+(a>=1) & (c<1) & (r>=2) : 2 ; -- K_r+a+c+r
+(a>=1) & (r>=2) : 2 ; -- K_r+a+r
+(c<1) & (r>=2) : 0 ; -- K_r+c+r
+(a>=1) & (c<1) : 1 ; -- K_r+a+c
+(r>=2) : 0 ; -- K_r+r
+(c<1) : 1 ; -- K_r+c
+(a>=1) : 0 ; -- K_r+a
+1 : 0 ; -- K_r
+esac;
+
+F_b :=
+case
+(r<1) : 1 ; -- K_b+r
+1 : 0 ; -- K_b
+esac;
+
+F_ko :=
+case
+(ko=1) : 1 ; -- K_ko+ko
+1 : 0 ; -- K_ko
+esac;
+
+F_trans :=
+case
+(trans=1) : 1 ; -- K_trans+trans
+1 : 0 ; -- K_trans
+esac;
+
+ASSIGN
+
+next(a) :=
+case
+a = F_a : a ;
+a < F_a : {a, a + 1} ;
+a > F_a : {a - 1, a} ;
+esac;
+
+next(c) :=
+case
+c =  F_c : c ;
+ 1 : {0, 1} ;
+esac;
+
+next(r) :=
+case
+r = F_r : r ;
+r < F_r : {r, r + 1} ;
+r > F_r : {r - 1, r} ;
+esac;
+
+next(b) :=
+case
+b =  F_b : b ;
+ 1 : {0, 1} ;
+esac;
+
+next(ko) :=
+case
+ko =  F_ko : ko ;
+ 1 : {0, 1} ;
+esac;
+
+next(trans) :=
+case
+trans =  F_trans : trans ;
+ 1 : {0, 1} ;
+esac;
+
+TRANS
+
+(a = F_a & c = F_c & r = F_r & b = F_b & ko = F_ko & trans = F_trans) |
+(a != next(a) & c  = next(c) & r  = next(r) & b  = next(b) & ko  = next(ko) & trans  = next(trans)) |
+(a  = next(a) & c != next(c) & r  = next(r) & b  = next(b) & ko  = next(ko) & trans  = next(trans)) |
+(a  = next(a) & c  = next(c) & r != next(r) & b  = next(b) & ko  = next(ko) & trans  = next(trans)) |
+(a  = next(a) & c  = next(c) & r  = next(r) & b != next(b) & ko  = next(ko) & trans  = next(trans)) |
+(a  = next(a) & c  = next(c) & r  = next(r) & b  = next(b) & ko != next(ko) & trans  = next(trans)) |
+(a  = next(a) & c  = next(c) & r  = next(r) & b  = next(b) & ko  = next(ko) & trans != next(trans))
+
+SPEC
+
+((ko=0&trans=0&a=2&c=1&b=1)->AF(AG(a=2&c=1&b=1)))
+&((ko=1&trans=0&a>=1&c=0&b=1)->AF(AG(b=0)))
+&((ko=0&trans=1&a>=1&c=1&b=0)->AF(EF(b=0)))
+&((ko=0&trans=0&a=0)->AF(AG(c=0&b=0)))
+&((ko=0&trans=0&a=2&b=0&c=0)->AF(AG(c=1&b=1)))
+&((ko=0&trans=0&a=1&b=1&c=1)->AF(EF(c=1&b=0)))
+

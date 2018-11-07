@@ -1,0 +1,50 @@
+-- NuSMV file written by SMBioNet
+
+MODULE main
+
+VAR
+
+a : 0 .. 2 ;
+b : 0 .. 1 ;
+
+DEFINE
+
+F_a :=
+case
+(a>1) & (b<1) : 2 ; -- K_a+acti+inhi
+(b<1) : 2 ; -- K_a+inhi
+(a>1) : 2 ; -- K_a+acti
+1 : 2 ; -- K_a
+esac;
+
+F_b :=
+case
+(a>1) : 1 ; -- K_b+acti
+1 : 0 ; -- K_b
+esac;
+
+ASSIGN
+
+next(a) :=
+case
+a = F_a : a ;
+a < F_a : {a, a + 1} ;
+a > F_a : {a - 1, a} ;
+esac;
+
+next(b) :=
+case
+b =  F_b : b ;
+ 1 : {0, 1} ;
+esac;
+
+TRANS
+
+(a = F_a & b = F_b) |
+(a != next(a) & b  = next(b)) |
+(a  = next(a) & b != next(b))
+
+SPEC
+
+(b=0)->EF(a=2)
+

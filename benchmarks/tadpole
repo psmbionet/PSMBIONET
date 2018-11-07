@@ -1,0 +1,81 @@
+VAR
+
+T3 = 0 3;
+T4 = 0 1;
+d2 = 0 1;
+d3 = 0 1;
+gi = 0 1;
+gp = 0 1;
+gt = 0 1;
+trb = 0 1;
+
+REG
+
+catalyse1 [((d2>=1)&(T4>=1))] => T3;
+catalyse3 [((d3<1)&(T3>=1))] => T3;
+catalyse2 [((d3<1)&(T4>=1))] => T4;
+factransc [((T3>=3)& (trb>=1))] => gt;
+acti [gi>=1] => d2;
+inhi [(gt<1)] => d2 trb;
+acti [(T3>=1)] => d3 gi;
+inhi [(gp<1)] => d3;
+acti [(T3>=2)] => gp trb;
+
+PARA
+
+
+# Parameters for T3
+
+K_T3 = 0  ;
+K_T3+catalyse1 = 0 3 ;
+K_T3+catalyse3 = 0 3 ;
+K_T3+catalyse1+catalyse3 = 0 3 ;
+
+# Parameters for T4
+
+K_T4 = 0 1 ;
+K_T4+catalyse2 = 0 1 ;
+
+# Parameters for d2
+
+K_d2 = 0 1 ;
+K_d2+acti = 0 1 ;
+K_d2+inhi = 0 1 ;
+K_d2+acti+inhi = 0 1 ;
+
+# Parameters for d3
+
+K_d3 = 0 1 ;
+K_d3+acti = 0 1 ;
+K_d3+inhi = 0 1 ;
+K_d3+acti+inhi = 0 1 ;
+
+# Parameters for gi
+
+K_gi = 0  1;
+K_gi+acti = 0 1 ;
+
+# Parameters for gp
+
+K_gp = 0  1;
+K_gp+acti = 0 1 ;
+
+# Parameters for gt
+K_gt = 0  1;
+K_gt+factransc = 0 1 ;
+
+# Parameters for trb
+
+K_trb = 0 1 ;
+K_trb+acti = 0 1 ;
+K_trb+inhi = 0 1 ;
+K_trb+acti+inhi = 0 1 ;
+
+
+
+
+CTL
+
+((T4=0 & T3=0 & d2=0 & d3=1 & gi=0 & gp=0 & trb=0 & gt=0) -> AF (T3=3 & T4=1 & d2=1 & d3=0 & gi=1 & gp=1 & trb=1 & gt=0)) &
+((T3=3 & T4=1 & d2=1 & d3=0 & gi=1 & gp=1 & trb=1 & gt=0) -> AF(gt=1))
+

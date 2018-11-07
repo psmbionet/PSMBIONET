@@ -1,0 +1,42 @@
+TEST0.smv
+TEST0.smv
+-- K_BTK = 0
+--END
+-- K_MAL = 0
+-- K_MAL+BTK = 0
+-- K_MAL+SOCS = 0
+-- K_MAL+BTK+SOCS = 1
+--END
+-- K_SOCS = 0
+-- K_SOCS+INCY = 1
+--END
+-- K_NFKB+SOCS = 0
+-- K_NFKB+MAL+SOCS = 1
+-- K_NFKB+INCY+SOCS = 1
+-- K_NFKB+INCY+MAL+SOCS = 1
+--END
+-- K_INCY = 0
+-- K_INCY+NFKB = 2
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- K_BTK = 0
+--END
+-- K_MAL = 0
+-- K_MAL+BTK = 1
+-- K_MAL+SOCS = 0
+-- K_MAL+BTK+SOCS = 1
+--END
+-- K_SOCS = 0
+-- K_SOCS+INCY = 1
+--END
+-- K_NFKB+SOCS = 0
+-- K_NFKB+MAL+SOCS = 1
+-- K_NFKB+INCY+SOCS = 1
+-- K_NFKB+INCY+MAL+SOCS = 1
+--END
+-- K_INCY = 0
+-- K_INCY+NFKB = 2
+--END
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+

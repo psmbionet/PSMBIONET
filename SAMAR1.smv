@@ -1,0 +1,263 @@
+-- NuSMV file written by SMBioNet
+
+MODULE main
+
+VAR
+
+GLUT1 : 0 .. 1 ;
+GLUT4 : 0 .. 1 ;
+Pyruvate : 0 .. 1 ;
+PFK1 : 0 .. 1 ;
+PDK : 0 .. 1 ;
+AcetylCoA : 0 .. 1 ;
+FattyAcids : 0 .. 1 ;
+CD36 : 0 .. 1 ;
+FAS : 0 .. 1 ;
+Citrate : 0 .. 1 ;
+ATP_NADH : 0 .. 1 ;
+CiC : 0 .. 1 ;
+MalonylCoA : 0 .. 1 ;
+AMPK : 0 .. 1 ;
+PPARg : 0 .. 1 ;
+TZD : 0 .. 1 ;
+
+DEFINE
+
+F_GLUT1 := 1 ; -- K_GLUT1
+
+F_GLUT4 := 1 ; -- K_GLUT4
+
+F_Pyruvate :=
+case
+(GLUT1>=1) & (GLUT4>=1) & (PFK1>=1) : 1 ; -- K_Pyruvate+GLUT1+GLUT4+PFK1
+(GLUT1>=1) & (PFK1>=1) : 1 ; -- K_Pyruvate+GLUT1+PFK1
+(GLUT4>=1) & (PFK1>=1) : 0 ; -- K_Pyruvate+GLUT4+PFK1
+(GLUT1>=1) & (GLUT4>=1) : 0 ; -- K_Pyruvate+GLUT1+GLUT4
+(PFK1>=1) : 0 ; -- K_Pyruvate+PFK1
+(GLUT4>=1) : 0 ; -- K_Pyruvate+GLUT4
+(GLUT1>=1) : 0 ; -- K_Pyruvate+GLUT1
+1 : 0 ; -- K_Pyruvate
+esac;
+
+F_PFK1 :=
+case
+(CiC<1) & (Citrate<1) : 1 ; -- K_PFK1+CiC+Citrate
+(Citrate<1) : 0 ; -- K_PFK1+Citrate
+(CiC<1) : 1 ; -- K_PFK1+CiC
+1 : 0 ; -- K_PFK1
+esac;
+
+F_PDK :=
+case
+(ATP_NADH>=1) & (PPARg>=1) & (Pyruvate<1) : 0 ; -- K_PDK+ATP_NADH+PPARg+Pyruvate
+(ATP_NADH>=1) & (Pyruvate<1) : 0 ; -- K_PDK+ATP_NADH+Pyruvate
+(PPARg>=1) & (Pyruvate<1) : 0 ; -- K_PDK+PPARg+Pyruvate
+(ATP_NADH>=1) & (PPARg>=1) : 0 ; -- K_PDK+ATP_NADH+PPARg
+(Pyruvate<1) : 0 ; -- K_PDK+Pyruvate
+(PPARg>=1) : 0 ; -- K_PDK+PPARg
+(ATP_NADH>=1) : 0 ; -- K_PDK+ATP_NADH
+1 : 0 ; -- K_PDK
+esac;
+
+F_AcetylCoA :=
+case
+(FattyAcids>=1) & (MalonylCoA<1) & (PDK<1) & (Pyruvate>=1) : 0 ; -- K_AcetylCoA+FattyAcids+MalonylCoA+PDK+Pyruvate
+(MalonylCoA<1) & (PDK<1) & (Pyruvate>=1) : 0 ; -- K_AcetylCoA+MalonylCoA+PDK+Pyruvate
+(FattyAcids>=1) & (PDK<1) & (Pyruvate>=1) : 0 ; -- K_AcetylCoA+FattyAcids+PDK+Pyruvate
+(FattyAcids>=1) & (MalonylCoA<1) & (PDK<1) : 0 ; -- K_AcetylCoA+FattyAcids+MalonylCoA+PDK
+(FattyAcids>=1) & (MalonylCoA<1) & (Pyruvate>=1) : 0 ; -- K_AcetylCoA+FattyAcids+MalonylCoA+Pyruvate
+(FattyAcids>=1) & (Pyruvate>=1) : 0 ; -- K_AcetylCoA+FattyAcids+Pyruvate
+(PDK<1) & (Pyruvate>=1) : 0 ; -- K_AcetylCoA+PDK+Pyruvate
+(FattyAcids>=1) & (PDK<1) : 0 ; -- K_AcetylCoA+FattyAcids+PDK
+(MalonylCoA<1) & (Pyruvate>=1) : 0 ; -- K_AcetylCoA+MalonylCoA+Pyruvate
+(MalonylCoA<1) & (PDK<1) : 0 ; -- K_AcetylCoA+MalonylCoA+PDK
+(FattyAcids>=1) & (MalonylCoA<1) : 0 ; -- K_AcetylCoA+FattyAcids+MalonylCoA
+(Pyruvate>=1) : 0 ; -- K_AcetylCoA+Pyruvate
+(PDK<1) : 0 ; -- K_AcetylCoA+PDK
+(MalonylCoA<1) : 0 ; -- K_AcetylCoA+MalonylCoA
+(FattyAcids>=1) : 0 ; -- K_AcetylCoA+FattyAcids
+1 : 0 ; -- K_AcetylCoA
+esac;
+
+F_FattyAcids :=
+case
+(AcetylCoA>=1) & (CD36>=1) & (FAS>=1) : 0 ; -- K_FattyAcids+AcetylCoA+CD36+FAS
+(AcetylCoA>=1) & (FAS>=1) : 0 ; -- K_FattyAcids+AcetylCoA+FAS
+(CD36>=1) & (FAS>=1) : 0 ; -- K_FattyAcids+CD36+FAS
+(AcetylCoA>=1) & (CD36>=1) : 0 ; -- K_FattyAcids+AcetylCoA+CD36
+(FAS>=1) : 0 ; -- K_FattyAcids+FAS
+(CD36>=1) : 0 ; -- K_FattyAcids+CD36
+(AcetylCoA>=1) : 0 ; -- K_FattyAcids+AcetylCoA
+1 : 0 ; -- K_FattyAcids
+esac;
+
+F_CD36 := 0 ; -- K_CD36
+
+F_FAS := 0 ; -- K_FAS
+
+F_Citrate :=
+case
+(AcetylCoA>=1) : 0 ; -- K_Citrate+AcetylCoA
+1 : 0 ; -- K_Citrate
+esac;
+
+F_ATP_NADH :=
+case
+(Citrate>=1) : 0 ; -- K_ATP_NADH+Citrate
+1 : 0 ; -- K_ATP_NADH
+esac;
+
+F_CiC := 0 ; -- K_CiC
+
+F_MalonylCoA :=
+case
+(AMPK<1) & (CiC>=1) & (Citrate>=1) : 0 ; -- K_MalonylCoA+AMPK+CiC+Citrate
+(AMPK<1) & (Citrate>=1) : 0 ; -- K_MalonylCoA+AMPK+Citrate
+(CiC>=1) & (Citrate>=1) : 0 ; -- K_MalonylCoA+CiC+Citrate
+(AMPK<1) & (CiC>=1) : 0 ; -- K_MalonylCoA+AMPK+CiC
+(Citrate>=1) : 0 ; -- K_MalonylCoA+Citrate
+(CiC>=1) : 0 ; -- K_MalonylCoA+CiC
+(AMPK<1) : 0 ; -- K_MalonylCoA+AMPK
+1 : 0 ; -- K_MalonylCoA
+esac;
+
+F_AMPK :=
+case
+(ATP_NADH<1) & (TZD>=1) : 0 ; -- K_AMPK+ATP_NADH+TZD
+(TZD>=1) : 0 ; -- K_AMPK+TZD
+(ATP_NADH<1) : 0 ; -- K_AMPK+ATP_NADH
+1 : 0 ; -- K_AMPK
+esac;
+
+F_PPARg :=
+case
+(FattyAcids>=1) & (TZD>=1) : 0 ; -- K_PPARg+FattyAcids+TZD
+(TZD>=1) : 0 ; -- K_PPARg+TZD
+(FattyAcids>=1) : 0 ; -- K_PPARg+FattyAcids
+1 : 0 ; -- K_PPARg
+esac;
+
+F_TZD := 0 ; -- K_TZD
+
+ASSIGN
+
+next(GLUT1) :=
+case
+GLUT1 =  F_GLUT1 : GLUT1 ;
+ 1 : {0, 1} ;
+esac;
+
+next(GLUT4) :=
+case
+GLUT4 =  F_GLUT4 : GLUT4 ;
+ 1 : {0, 1} ;
+esac;
+
+next(Pyruvate) :=
+case
+Pyruvate =  F_Pyruvate : Pyruvate ;
+ 1 : {0, 1} ;
+esac;
+
+next(PFK1) :=
+case
+PFK1 =  F_PFK1 : PFK1 ;
+ 1 : {0, 1} ;
+esac;
+
+next(PDK) :=
+case
+PDK =  F_PDK : PDK ;
+ 1 : {0, 1} ;
+esac;
+
+next(AcetylCoA) :=
+case
+AcetylCoA =  F_AcetylCoA : AcetylCoA ;
+ 1 : {0, 1} ;
+esac;
+
+next(FattyAcids) :=
+case
+FattyAcids =  F_FattyAcids : FattyAcids ;
+ 1 : {0, 1} ;
+esac;
+
+next(CD36) :=
+case
+CD36 =  F_CD36 : CD36 ;
+ 1 : {0, 1} ;
+esac;
+
+next(FAS) :=
+case
+FAS =  F_FAS : FAS ;
+ 1 : {0, 1} ;
+esac;
+
+next(Citrate) :=
+case
+Citrate =  F_Citrate : Citrate ;
+ 1 : {0, 1} ;
+esac;
+
+next(ATP_NADH) :=
+case
+ATP_NADH =  F_ATP_NADH : ATP_NADH ;
+ 1 : {0, 1} ;
+esac;
+
+next(CiC) :=
+case
+CiC =  F_CiC : CiC ;
+ 1 : {0, 1} ;
+esac;
+
+next(MalonylCoA) :=
+case
+MalonylCoA =  F_MalonylCoA : MalonylCoA ;
+ 1 : {0, 1} ;
+esac;
+
+next(AMPK) :=
+case
+AMPK =  F_AMPK : AMPK ;
+ 1 : {0, 1} ;
+esac;
+
+next(PPARg) :=
+case
+PPARg =  F_PPARg : PPARg ;
+ 1 : {0, 1} ;
+esac;
+
+next(TZD) :=
+case
+TZD =  F_TZD : TZD ;
+ 1 : {0, 1} ;
+esac;
+
+TRANS
+
+(GLUT1 = F_GLUT1 & GLUT4 = F_GLUT4 & Pyruvate = F_Pyruvate & PFK1 = F_PFK1 & PDK = F_PDK & AcetylCoA = F_AcetylCoA & FattyAcids = F_FattyAcids & CD36 = F_CD36 & FAS = F_FAS & Citrate = F_Citrate & ATP_NADH = F_ATP_NADH & CiC = F_CiC & MalonylCoA = F_MalonylCoA & AMPK = F_AMPK & PPARg = F_PPARg & TZD = F_TZD) |
+(GLUT1 != next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4 != next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate != next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1 != next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK != next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA != next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids != next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36 != next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS != next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate != next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH != next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC != next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA != next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK != next(AMPK) & PPARg  = next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg != next(PPARg) & TZD  = next(TZD)) |
+(GLUT1  = next(GLUT1) & GLUT4  = next(GLUT4) & Pyruvate  = next(Pyruvate) & PFK1  = next(PFK1) & PDK  = next(PDK) & AcetylCoA  = next(AcetylCoA) & FattyAcids  = next(FattyAcids) & CD36  = next(CD36) & FAS  = next(FAS) & Citrate  = next(Citrate) & ATP_NADH  = next(ATP_NADH) & CiC  = next(CiC) & MalonylCoA  = next(MalonylCoA) & AMPK  = next(AMPK) & PPARg  = next(PPARg) & TZD != next(TZD))
+
+SPEC
+
+(1)->(1);
+

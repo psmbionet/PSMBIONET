@@ -1,0 +1,82 @@
+-- NuSMV file written by SMBioNet
+
+MODULE main
+
+VAR
+
+TLR3 : 0 .. 1 ;
+DENV : 0 .. 1 ;
+SOCS : 0 .. 1 ;
+IFN : 0 .. 1 ;
+
+DEFINE
+
+F_TLR3 :=
+case
+(DENV>=1) & (SOCS<1) : 1 ; -- K_TLR3+DENV+SOCS
+(SOCS<1) : 1 ; -- K_TLR3+SOCS
+(DENV>=1) : 1 ; -- K_TLR3+DENV
+1 : 1 ; -- K_TLR3
+esac;
+
+F_DENV := 1 ; -- K_DENV
+
+F_SOCS :=
+case
+(DENV>=1) & (IFN>=1) : 1 ; -- K_SOCS+DENV+IFN
+(IFN>=1) : 1 ; -- K_SOCS+IFN
+(DENV>=1) : 1 ; -- K_SOCS+DENV
+1 : 1 ; -- K_SOCS
+esac;
+
+F_IFN :=
+case
+(DENV<1) & (SOCS<1) & (TLR3>=1) : 1 ; -- K_IFN+DENV+SOCS+TLR3
+(DENV<1) & (TLR3>=1) : 1 ; -- K_IFN+DENV+TLR3
+(SOCS<1) & (TLR3>=1) : 1 ; -- K_IFN+SOCS+TLR3
+(DENV<1) & (SOCS<1) : 1 ; -- K_IFN+DENV+SOCS
+(TLR3>=1) : 1 ; -- K_IFN+TLR3
+(SOCS<1) : 1 ; -- K_IFN+SOCS
+(DENV<1) : 1 ; -- K_IFN+DENV
+1 : 1 ; -- K_IFN
+esac;
+
+ASSIGN
+
+next(TLR3) :=
+case
+TLR3 =  F_TLR3 : TLR3 ;
+ 1 : {0, 1} ;
+esac;
+
+next(DENV) :=
+case
+DENV =  F_DENV : DENV ;
+ 1 : {0, 1} ;
+esac;
+
+next(SOCS) :=
+case
+SOCS =  F_SOCS : SOCS ;
+ 1 : {0, 1} ;
+esac;
+
+next(IFN) :=
+case
+IFN =  F_IFN : IFN ;
+ 1 : {0, 1} ;
+esac;
+
+TRANS
+
+(TLR3 = F_TLR3 & DENV = F_DENV & SOCS = F_SOCS & IFN = F_IFN) |
+(TLR3 != next(TLR3) & DENV  = next(DENV) & SOCS  = next(SOCS) & IFN  = next(IFN)) |
+(TLR3  = next(TLR3) & DENV != next(DENV) & SOCS  = next(SOCS) & IFN  = next(IFN)) |
+(TLR3  = next(TLR3) & DENV  = next(DENV) & SOCS != next(SOCS) & IFN  = next(IFN)) |
+(TLR3  = next(TLR3) & DENV  = next(DENV) & SOCS  = next(SOCS) & IFN != next(IFN))
+
+SPEC
+
+(((TLR3=0&IFN=0&SOCS=0&DENV=0)->EF(EG(SOCS=1&DENV=1)))&
+((TLR3=0&IFN=0&SOCS=0&DENV=0)->EX(EF(TLR3=0&IFN=0&SOCS=0&DENV=0))))
+

@@ -1,0 +1,170 @@
+VAR
+
+GLUT1 = 0 1 ;
+GLUT4 = 0 1 ;
+Pyruvate = 0 1 ;
+PFK1 = 0 1 ;
+PDK = 0 1 ;
+AcetylCoA = 0 1 ;
+FattyAcids = 0 1 ;
+CD36 = 0 1 ;
+FAS = 0 1 ;
+Citrate = 0 1 ;
+ATP_NADH = 0 1 ;
+CiC = 0 1 ;
+MalonylCoA = 0 1 ;
+AMPK = 0 1 ;
+PPARg = 0 1 ;
+TZD = 0 1 ;
+
+REG
+
+GLUT1 [(GLUT1>=1)]=> Pyruvate ;
+GLUT4 [(GLUT4>=1)]=> Pyruvate ;
+PFK1 [(PFK1>=1)]=> Pyruvate ;
+Citrate [(Citrate<1)]=> PFK1 ;
+CiC [(CiC<1)]=> PFK1 ;
+Pyruvate [(Pyruvate<1)]=> PDK ;
+ATP_NADH [(ATP_NADH>=1)]=> PDK ;
+PPARg [(PPARg>=1)]=> PDK ;
+Pyruvate [(Pyruvate>=1)]=> AcetylCoA ;
+PDK [(PDK<1)]=> AcetylCoA ;
+FattyAcids [(FattyAcids>=1)]=> AcetylCoA ;
+MalonylCoA [(MalonylCoA<1)]=> AcetylCoA ;
+AcetylCoA [(AcetylCoA>=1)]=> FattyAcids ;
+FAS [(FAS>=1)]=> FattyAcids ;
+CD36 [(CD36>=1)]=> FattyAcids ;
+AcetylCoA [(AcetylCoA>=1)]=> Citrate ;
+Citrate [(Citrate>=1)]=> ATP_NADH ;
+Citrate [(Citrate>=1)]=> MalonylCoA ;
+CiC [(CiC>=1)]=> MalonylCoA ;
+AMPK [(AMPK<1)]=> MalonylCoA ;
+ATP_NADH [(ATP_NADH<1)]=> AMPK ;
+TZD [(TZD>=1)]=> AMPK ;
+FattyAcids [(FattyAcids>=1)]=> PPARg ;
+TZD [(TZD>=1)]=> PPARg ;
+
+PARA
+
+# Parameters for GLUT1
+
+K_GLUT1 = 1 ;
+
+# Parameters for GLUT4
+
+K_GLUT4 = 1 ;
+
+# Parameters for Pyruvate
+
+K_Pyruvate = 0  ;
+K_Pyruvate+GLUT1 = 0 1 ;
+K_Pyruvate+GLUT4 = 0 1 ;
+K_Pyruvate+PFK1 = 0 1 ;
+K_Pyruvate+GLUT1+GLUT4 = 0 1 ;
+K_Pyruvate+GLUT4+PFK1 = 0 1 ;
+K_Pyruvate+GLUT1+PFK1 = 0 1 ;
+K_Pyruvate+GLUT1+GLUT4+PFK1 =  1 ;
+
+# Parameters for PFK1
+
+K_PFK1 = 0  ;
+K_PFK1+CiC = 0 1 ;
+K_PFK1+Citrate = 0 1 ;
+K_PFK1+CiC+Citrate = 1 ;
+
+# Parameters for PDK
+
+K_PDK = 0 1 ;
+K_PDK+ATP_NADH = 0 1 ;
+K_PDK+PPARg = 0 1 ;
+K_PDK+Pyruvate = 0 1 ;
+K_PDK+ATP_NADH+PPARg = 0 1 ;
+K_PDK+PPARg+Pyruvate = 0 1 ;
+K_PDK+ATP_NADH+Pyruvate = 0 1 ;
+K_PDK+ATP_NADH+PPARg+Pyruvate = 1 ;
+
+# Parameters for AcetylCoA
+
+K_AcetylCoA = 0 ;
+K_AcetylCoA+FattyAcids = 0 1 ;
+K_AcetylCoA+MalonylCoA = 0 1 ;
+K_AcetylCoA+PDK = 0 1 ;
+K_AcetylCoA+Pyruvate = 0 1 ;
+K_AcetylCoA+FattyAcids+MalonylCoA = 0 1 ;
+K_AcetylCoA+MalonylCoA+PDK = 0 1 ;
+K_AcetylCoA+MalonylCoA+Pyruvate = 0 1 ;
+K_AcetylCoA+FattyAcids+PDK = 0 1 ;
+K_AcetylCoA+PDK+Pyruvate = 0 1 ;
+K_AcetylCoA+FattyAcids+Pyruvate = 0 1 ;
+K_AcetylCoA+FattyAcids+MalonylCoA+Pyruvate = 0 1 ;
+K_AcetylCoA+FattyAcids+MalonylCoA+PDK = 0 1 ;
+K_AcetylCoA+FattyAcids+PDK+Pyruvate = 0 1 ;
+K_AcetylCoA+MalonylCoA+PDK+Pyruvate = 0 1 ;
+K_AcetylCoA+FattyAcids+MalonylCoA+PDK+Pyruvate = 1 ;
+
+# Parameters for FattyAcids
+
+K_FattyAcids = 0 ;
+K_FattyAcids+AcetylCoA = 0 1 ;
+K_FattyAcids+CD36 = 0 1 ;
+K_FattyAcids+FAS = 0 1 ;
+K_FattyAcids+AcetylCoA+CD36 = 0 1 ;
+K_FattyAcids+CD36+FAS = 0 1 ;
+K_FattyAcids+AcetylCoA+FAS = 0 1 ;
+K_FattyAcids+AcetylCoA+CD36+FAS = 1 ;
+
+# Parameters for CD36
+
+K_CD36 = 0 ;
+
+# Parameters for FAS
+
+K_FAS = 0 ;
+
+# Parameters for Citrate
+
+K_Citrate = 0  ;
+K_Citrate+AcetylCoA = 1 ;
+
+# Parameters for ATP_NADH
+
+K_ATP_NADH = 0 ;
+K_ATP_NADH+Citrate = 1 ;
+
+# Parameters for CiC
+
+K_CiC = 0 ;
+
+# Parameters for MalonylCoA
+
+K_MalonylCoA = 0 ;
+K_MalonylCoA+AMPK = 0 1 ;
+K_MalonylCoA+CiC = 0 1 ;
+K_MalonylCoA+Citrate = 0 1 ;
+K_MalonylCoA+AMPK+CiC = 0 1 ;
+K_MalonylCoA+CiC+Citrate = 0 1 ;
+K_MalonylCoA+AMPK+Citrate = 0 1 ;
+K_MalonylCoA+AMPK+CiC+Citrate = 1 ;
+
+# Parameters for AMPK
+
+K_AMPK = 0 ;
+K_AMPK+ATP_NADH = 0 1 ;
+K_AMPK+TZD = 0 1 ;
+K_AMPK+ATP_NADH+TZD = 1 ;
+
+# Parameters for PPARg
+
+K_PPARg = 0 ;
+K_PPARg+FattyAcids = 0 1 ;
+K_PPARg+TZD = 0 1 ;
+K_PPARg+FattyAcids+TZD = 1 ;
+
+# Parameters for TZD
+
+K_TZD = 0 ;
+
+CTL
+
+(1)->(1);
+
